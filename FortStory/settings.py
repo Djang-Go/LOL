@@ -1,4 +1,5 @@
 from pathlib import Path
+import os
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -48,10 +49,16 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'FortStory.wsgi.application'
 
-DATABASES = {
+DATABASE = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'djongo',
+        "CLIENT": {
+           "name": 'FortStory',
+           "host": os.environ['MONGO_HOST'],
+           "username": os.environ['MONGO_USER'],
+           "password": os.environ['MONGO_PW'],
+           "authMechanism": "SCRAM-SHA-1",
+        },
     }
 }
 
