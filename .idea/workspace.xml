@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e48dcd07-0fb1-4991-b994-8571b8851138" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/FortStory.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FortStory.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FortStory/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/FortStory/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +90,7 @@
       <option name="presentableId" value="Default" />
       <updated>1706510059325</updated>
       <workItem from="1706510065728" duration="4675000" />
-      <workItem from="1706686459169" duration="3805000" />
+      <workItem from="1706686459169" duration="4310000" />
     </task>
     <servers />
   </component>
