@@ -1,6 +1,8 @@
 from pathlib import Path
 import os
 
+import certifi
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'django-insecure-k5!%zznw%qywj5+c*&$e3#y=l_5u%rds+3p69h@q4o7(1p#w(h'
@@ -16,13 +18,14 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'article',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
+    #'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -49,18 +52,18 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'FortStory.wsgi.application'
 
-DATABASE = {
+DATABASES = {
     'default': {
         'ENGINE': 'djongo',
-        "CLIENT": {
-           "name": 'FortStory',
-           "host": os.environ['MONGO_HOST'],
-           "username": os.environ['MONGO_USER'],
-           "password": os.environ['MONGO_PW'],
-           "authMechanism": "SCRAM-SHA-1",
-        },
+        'NAME': 'fortStory',
+        'CLIENT': {
+            'host': os.environ.get('MONGO_HOST'),
+            'username': os.environ.get('MONGO_USER'),
+            'password': os.environ.get('MONGO_PW'),
+        }
     }
 }
+
 
 AUTH_PASSWORD_VALIDATORS = [
     {
