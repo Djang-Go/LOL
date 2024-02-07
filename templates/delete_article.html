@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    {% block content %}
+    <h2>게시글 삭제</h2>
+    <form method="POST">
+        <p>정말로 "{{ article.title }}" 게시글을 삭제하시겠습니까?</p>
+        <input type="submit" value="삭제">
+    </form>
+    {% endblock %}
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% block content %}
+    <h2>게시글 목록</h2>
+    {% for article in articles %}
+        <h3>{{ article.title }}</h3>
+        <p>{{ article.content }}</p>
+        <a href="{% url 'view_article' article.id %}">자세히 보기</a>
+    {% endfor %}
+    {% endblock %}  
+</body>
+</html>

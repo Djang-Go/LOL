@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e48dcd07-0fb1-4991-b994-8571b8851138" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/templates/create_article.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/delete_article.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/error.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/list_article.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/update_article.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/veiw_article.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FortStory/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/FortStory/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/article/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/article/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/article/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/article/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/article/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/article/views.py" afterDir="false" />
     </list>
@@ -20,6 +24,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -40,22 +45,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Django Server.FortStory.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/seungwon1/Documents/FortStory/FortStory/migrations&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Django Server.FortStory.executor": "Run",
+    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "django.template.preview.state": "SHOW_EDITOR_AND_PREVIEW",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/seungwon1/Documents/FortStory/FortStory/migrations",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/FortStory/migrations" />
@@ -112,7 +119,7 @@
       <workItem from="1706686459169" duration="4310000" />
       <workItem from="1706855129866" duration="5517000" />
       <workItem from="1706860815342" duration="1623000" />
-      <workItem from="1706980840945" duration="1305000" />
+      <workItem from="1706980840945" duration="3624000" />
     </task>
     <servers />
   </component>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    
+    {% block content %}
+    <h2>새 게시글 작성</h2>
+    <form method="POST">
+        <label for="title">제목:</label><br>
+        <input type="text" id="title" name="title"><br>
+        <label for="content">내용:</label><br>
+        <textarea id="content" name="content"></textarea><br>
+        <input type="submit" value="작성">
+    </form>
+    {% endblock %}
+</body>
+</html>
