@@ -6,12 +6,22 @@
   <component name="ChangeListManager">
     <list default="true" id="e48dcd07-0fb1-4991-b994-8571b8851138" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FortStory/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/FortStory/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FortStory/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/FortStory/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/article/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/article/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/article/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/article/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/article/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/article/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -23,7 +33,9 @@
   &quot;associatedIndex&quot;: 7
 }</component>
   <component name="ProjectId" id="2bcMkrgQhLuudvPVySe2PEByaQC" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -35,6 +47,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/seungwon1/Documents/FortStory/FortStory/migrations&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -43,6 +56,12 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/FortStory/migrations" />
+      <recent name="$PROJECT_DIR$/FortStory" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="FortStory" type="Python.DjangoServer" factoryName="Django server">
       <module name="FortStory" />
@@ -50,11 +69,11 @@
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-        <env name="MONGO_HOST" value="mongodb+srv://kim:PvWhpuifU95sQGFm@django.hgaqxjz.mongodb.net/" />
-        <env name="MONGO_USER" value="kim" />
-        <env name="MONGO_PW" value="PvWhpuifU95sQGFm" />
         <env name="DJANGO_SETTINGS_MODULE" value="FortStory.settings" />
+        <env name="MONGO_HOST" value="mongodb+srv://kim:PvWhpuifU95sQGFm@django.hgaqxjz.mongodb.net/fortStory?retryWrites=true&amp;w=majority&amp;tls=true&amp;tlsAllowInvalidCertificates=true" />
+        <env name="MONGO_PW" value="PvWhpuifU95sQGFm" />
+        <env name="MONGO_USER" value="kim" />
+        <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="SDK_NAME" value="Python 3.12 (FortStory)" />
@@ -91,6 +110,9 @@
       <updated>1706510059325</updated>
       <workItem from="1706510065728" duration="4675000" />
       <workItem from="1706686459169" duration="4310000" />
+      <workItem from="1706855129866" duration="5517000" />
+      <workItem from="1706860815342" duration="1623000" />
+      <workItem from="1706980840945" duration="1305000" />
     </task>
     <servers />
   </component>
