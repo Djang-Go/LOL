@@ -3,18 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Light gray background */
+}
+.container {
+    width:  80%;
+    margin: auto;
+    background-color: #fff; /* White background for the form container */
+    padding:  20px;
+    border-radius:  10px;
+    box-shadow:  0  0  10px rgba(0,  0,  0,  0.1); /* Subtle shadow for depth */
+}
+.form-group {
+    margin-bottom:  10px;
+}
+.form-group label {
+    display: block;
+    color: #333; /* Dark gray for labels */
+}
+.form-group input,  
+.form-group textarea {
+    width:  100%;
+    padding:  10px;
+    border:  1px solid #ddd;
+    border-radius:  5px;
+    box-sizing: border-box;
+    background-color: #f9f9f9; /* Light gray input background */
+}
+.btn {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    margin:  2px  0;
+    border: solid  2px transparent; /* Invisible border that will become visible on hover */
+    border-radius:  0.4em; /* Rounded corners */
+    padding:  0.5em  1em; /* Padding inside the button */
+    color: #ffffff; /* Text color */
+    background-color: #9555af; /* Background color */
+    transition: background-color  0.3s ease, color  0.3s ease, transform  0.1s ease; /* Smooth transitions */
+    cursor: pointer; /* Hand cursor on hover */
+}
+
+.btn:hover {
+    background-color: #ffffff; /* Background color on hover */
+    color: #9555af; /* Text color on hover */
+    border-color: #9555af; /* Border color on hover */
+    transform: scale(1.05); /* Slight scaling effect on hover */
+}
+
+.btn:active {
+    transform: translateY(1px); /* Slight push effect on click */
+    filter: saturate(150%); /* Saturation increase on click */
+}
+
+.btn:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow:  0  0  0  3px rgba(149,  85,  175,  0.5); /* Custom focus ring */
+}
+
+textarea {
+    resize: none;
+}
+
+    </style>
 </head>
 <body>
-    
-    {% block content %}
-    <h2>새 게시글 작성</h2>
-    <form method="POST">
-        <label for="title">제목:</label><br>
-        <input type="text" id="title" name="title"><br>
-        <label for="content">내용:</label><br>
-        <textarea id="content" name="content"></textarea><br>
-        <input type="submit" value="작성">
-    </form>
-    {% endblock %}
+    <div class="container">
+        <h2>새 블로그 작성</h2>
+        <form method="POST">
+            <div class="form-group">
+                <label for="title">제목 :</label>
+                <input type="text" id="title" name="title">
+            </div>
+            <div class="form-group">
+                <label for="content">내용 :</label>
+                <textarea id="content" name="content"></textarea>
+            </div>
+            <input type="submit" class="btn" value="작성">
+        </form>
+    </div>
 </body>
 </html>
