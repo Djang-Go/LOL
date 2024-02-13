@@ -12,9 +12,8 @@ def create_article(request):
         title = request.POST.get('title')
         content = request.POST.get('content')
 
-        if title is None or content is None:
-            error_message = "제목과 내용을 모두 입력해주세요."
-            return render(request, 'error.html', {'error_message': error_message})
+        if title == "" or content == "":
+            return render(request, 'create_article.html')
 
         article = Article(title=title, content=content)
         article.save()

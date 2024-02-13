@@ -23,10 +23,18 @@
     display: block;
     color: #333; /* Dark gray for labels */
 }
-.form-group input,  
-.form-group textarea {
+.form-group input {
     width:  100%;
     padding:  10px;
+    border:  1px solid #ddd;
+    border-radius:  5px;
+    box-sizing: border-box;
+    background-color: #f9f9f9; /* Light gray input background */
+}
+
+.form-group textarea {
+    width:  100%;
+    padding:  40px;
     border:  1px solid #ddd;
     border-radius:  5px;
     box-sizing: border-box;
@@ -72,7 +80,7 @@ textarea {
 <body>
     <div class="container">
         <h2>새 블로그 작성</h2>
-        <form method="POST">
+        <form method="POST" onsubmit="return checkTitle()">
             <div class="form-group">
                 <label for="title">제목 :</label>
                 <input type="text" id="title" name="title">
@@ -85,4 +93,16 @@ textarea {
         </form>
     </div>
 </body>
+<script>
+    function checkTitle() {
+        const titleInput = document.getElementById("title");
+
+        if (titleInput.value === "") {
+            alert("제목을 입력해주세요.");
+            return false;  // 폼 제출을 막기 위해 false 반환
+        }
+
+        return true;  // 제목이 입력되었으면 폼 제출 허용
+    }
+</script>
 </html>
