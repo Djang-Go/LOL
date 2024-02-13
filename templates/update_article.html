@@ -16,4 +16,16 @@
     </form>
     {% endblock %}
 </body>
+<script>
+    function checkTitle() {
+        const titleInput = document.getElementById("title");
+
+        if (titleInput.value === "") {
+            alert("제목을 입력해주세요.");
+            return false;  // 폼 제출을 막기 위해 false 반환
+        }
+
+        return true;  // 제목이 입력되었으면 폼 제출 허용
+    }
+</script>
 </html>

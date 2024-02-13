@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e48dcd07-0fb1-4991-b994-8571b8851138" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FortStory/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/FortStory/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/article/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/article/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/create_article.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/create_article.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/error.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/error.html" afterDir="false" />
-    </list>
+    <list default="true" id="e48dcd07-0fb1-4991-b994-8571b8851138" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -116,7 +110,7 @@
       <workItem from="1706855129866" duration="5517000" />
       <workItem from="1706860815342" duration="1623000" />
       <workItem from="1706980840945" duration="6753000" />
-      <workItem from="1707819418338" duration="1342000" />
+      <workItem from="1707819418338" duration="1988000" />
     </task>
     <servers />
   </component>
