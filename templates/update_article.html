@@ -3,29 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-</head>
-<body>
-    {% block content %}
-    <h2>게시글 수정</h2>
-    <form method="POST">
-        <label for="title">제목:</label><br>
-        <input type="text" id="title" name="title" value="{{ article.title }}"><br>
-        <label for="content">내용:</label><br>
-        <textarea id="content" name="content">{{ article.content }}</textarea><br>
-        <input type="submit" value="수정">
-    </form>
-    {% endblock %}
-</body>
-<script>
-    function checkTitle() {
-        const titleInput = document.getElementById("title");
-
-        if (titleInput.value === "") {
-            alert("제목을 입력해주세요.");
-            return false;  // 폼 제출을 막기 위해 false 반환
+    <style>
+        /* Extended color palette */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fafafa;
+            color: #333;
+            margin:  20px; /* Add margin to the body */
         }
 
-        return true;  // 제목이 입력되었으면 폼 제출 허용
-    }
-</script>
+        h2 {
+            color: #2c3e50;
+            margin-top: 0; /* Add top margin to h2 */
+        }
+
+        label {
+            color: #7f8c8d;
+        }
+
+        input[type="text"], textarea {
+            border: none;
+            border-radius:   5px;
+            padding:   10px;
+            width:   100%;
+            margin-bottom:   10px;
+            box-shadow:   0   1px   3px rgba(0,0,0,0.1);
+            background-color: #ecf0f1;
+        }
+
+        input[type="submit"] {
+            background-color: #3498db;
+            color: white;
+            padding:   10px   20px;
+            border: none;
+            border-radius:   5px;
+            cursor: pointer;
+            transition: background-color   0.3s ease, transform  0.2s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #2980b9;
+            transform: scale(1.05);
+        }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .back-button:hover {
+            background-color: #2980b9;
+            transform: scale(1.05);
+        }
+
+        .container {
+    padding-top:  60px; /* Adjust this value as needed */
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>게시글 수정</h2>
+        <a href="{% url 'view_article' article.id %}" class="back-button">뒤로 가기</a>
+
+        <form method="POST">
+            <label for="title">제목:</label><br>
+            <input type="text" id="title" name="title" value="{{ article.title }}"><br>
+            <label for="content">내용:</label><br>
+            <textarea id="content" name="content">{{ article.content }}</textarea><br>
+            <input type="submit" value="수정">
+        </form>
+    </div>
+</body>
 </html>
